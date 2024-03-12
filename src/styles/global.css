@@ -29,12 +29,6 @@ body {
   font-size: 20px;
   line-height: 1.7;
 }
-main {
-  width: 720px;
-  max-width: calc(100% - 2em);
-  margin: auto;
-  padding: 3em 1em;
-}
 h1,
 h2,
 h3,
@@ -98,7 +92,7 @@ code {
   border-radius: 2px;
 }
 pre {
-  margin: 1em;
+  margin: 1em 0px;
   padding: 1em;
   border-radius: 8px;
 }
