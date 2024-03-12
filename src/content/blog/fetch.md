@@ -86,33 +86,3 @@ Output
 ```bash
 ngrok http 3000
 ```
-
-```swift
-import UIKit
-
-class ViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Create a label
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Hello, World!"
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 24)
-        view.addSubview(label)
-
-        // Add constraints to center the label
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
-    }
-}
-
-// Create the app's window and set the root view controller
-let window = UIWindow(frame: UIScreen.main.bounds)
-let viewController = ViewController()
-window.rootViewController = viewController
-window.makeKeyAndVisible()
-```

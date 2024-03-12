@@ -19,22 +19,20 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<section>
-				<ul>
+			<section class="grid grid-cols-1 md:grid-cols-2 gap-3">
 					{
 						posts.map((post) => (
-							<li>
+							<div class="shadow-md rounded hover:shadow-lg">
 								<a href={`/rest-and-graphql/blog/${post.slug}/`}>
 									<img width={720} height={360} src={post.data.heroImage} alt={post.data.heroImage} />
-									<h4 class="title">{post.data.title}</h4>
+									<h4 class="font-bold">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
 								</a>
-							</li>
+							</div>
 						))
 					}
-				</ul>
 			</section>
 		</main>
 		<Footer />
