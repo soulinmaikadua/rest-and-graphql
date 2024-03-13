@@ -17,13 +17,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 	<body>
 		<Header />
-		<main class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+		<main class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 my-4">
 			<article>
-				<div class="hero-image">
-					{heroImage && <img src={heroImage} alt={heroImage} />}
+				<div class="text-center">
+					{heroImage && <img src={heroImage} class="mx-auto" alt={heroImage} />}
 				</div>
 				<div>
-					<div>
+					<div class="text-center">
 						<div>
 							<FormattedDate date={pubDate} />
 							{
